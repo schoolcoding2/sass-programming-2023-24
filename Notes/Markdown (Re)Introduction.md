@@ -1,3 +1,12 @@
+---
+tags:
+  - programming
+  - notes
+  - y2023
+  - coding
+notes:
+---
+
 # Headings
 To create headings we use hash symbols (#)
 We can also create different "level" headings
