@@ -21,4 +21,4 @@ print("my favourite is the second one")
 fave_food = input("whats your favourite food")
 
 #respond with your favourite food
-print(f" ohhh.[fave_food] Sounds good")
+print(f" ohhh.[fave_food] Sounds good =)")
