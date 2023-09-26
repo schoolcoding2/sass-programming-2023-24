@@ -20,8 +20,10 @@ list_of_fave_food_responses = [
     "Mmmm. That sounds Delicious." 
     f" yes, {favourite_food } is one of my favourites too!"
     "Cool."
-    "Interesting, I've never tried that before."
-]
+    "Interesting, I've never tried that before."]
+
+print(list_of_fave_food_responses[22])
+
 # Choose one response randomly from the list
 import random 
 random_response = random.choice (list_of_fave_food_responses)
