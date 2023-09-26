@@ -32,13 +32,13 @@ list_of_fave_food_responses = [
 
 # Choose one response randomly from the list
 
+list_of_fave_food_responses[2]
 
 random_response = random.choice (list_of_fave_food_responses)
 print(random_response)
 # Print out the chosen response
 
 time.sleep(1.5)
-
         
 # Respond with something appropriate
 print(f"nice, I love eating {favourite_food} as well")
