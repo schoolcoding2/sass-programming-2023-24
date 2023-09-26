@@ -2,7 +2,7 @@ In python, lists are a collection of items
 We store values inside of lists
 The values of the items can be of different [[types]]
 **order matters** in a list
-
+MAKE SURE TO SEPARATE EACH LIST ITEM BY A COMMA
 # creating a list
 to make a list, we use brackets [] to surround our lists
 We separate the individual items with commas

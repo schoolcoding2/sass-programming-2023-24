@@ -11,12 +11,8 @@
             "id": "bdcf2c3488db0648",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Markdown (Re)Introduction.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Markdown (Re)Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Markdown (Re)Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Notes/Markdown (Re)Introduction.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,10 +138,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bda4727df3b0891f",
+  "active": "bdcf2c3488db0648",
   "lastOpenFiles": [
     "Notes/modules.md",
+    "Notes/1. Natural Language Processing.md",
     "Notes/lists.md",
+    "Notes/Markdown (Re)Introduction.md",
     "Notes/Design.md",
     "Notes/Design.mdMarkdown (raw)Open file.webloc",
     "warmup_1.py",
@@ -160,11 +154,9 @@
     "Notes/Format string.md",
     "Notes/headers.md",
     "quotegenerator.py",
-    "Notes/1. Natural Language Processing.md",
     "Notes/1. Natural Language Processing .md.md",
     "Notes/Untitled.md",
     "2023-09-14.md",
-    "Notes/Markdown (Re)Introduction.md",
     "README.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
