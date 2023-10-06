@@ -20,6 +20,7 @@ time.sleep(1)
 # Suggest an Italian restaurant
 # List all the Italian dishes
 
+chinese_food = ["dumplings", "fried rice", "buns", "mooncake", "rice", "wonton"]
 italian_food = ["pizza","pasta","canneloni","tiramisu" ]
 if fave_food.lower().strip(",.?!") in italian_food:
     print("I think that you may like Italian food. 🍝")
@@ -30,10 +31,7 @@ if fave_food.lower().strip(",.?!") in italian_food:
     time.sleep(1)
     print("8368 Alexandra Rd, Richmond")
 
-# Add one more cuisine/type/etc. -> Chinese food
-# Test it out to see if it works
-chinese_food = ["dumplings", "fried rice", "buns", "mooncake", "rice", "wonton"]
-if fave_food.lower().strip(",.?!") in chinese_food:
+elif fave_food.lower().strip(",.?!") in chinese_food:
     print("I highly recommend trying out some Chinese food")
     time.sleep(1)
     print("There's a good resturant called Mui Garden Restaurant Richmond")
@@ -41,8 +39,12 @@ if fave_food.lower().strip(",.?!") in chinese_food:
     print("The address is 5960 Minoru Blvd, Richmond")
     time.sleep(1)
     print("I hope you enjoy!")
+    
 else:
     print("Sorry, I don't recognize your favourite food.")
     print("The algorithm is still being worked on")
+    time.sleep(1)
     print("I can't offer a good suggestion for you")
 
+time.sleep(1)
+print("Thanks for using this service! I hope to hear from you soon.")
