@@ -37,14 +37,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "modules.md",
+                "file": "Design.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6831ad5cde91a5e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "strings.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8917b69eb62a3f8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "strings.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "modules.md",
+                "file": "strings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "modules.md",
+                "file": "strings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "modules.md"
+                "file": "strings.md"
               }
             }
           }
@@ -171,16 +195,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "668cec1a1f8c2ca9",
+  "active": "6831ad5cde91a5e4",
   "lastOpenFiles": [
-    "1. Natural Language Processing.md",
-    "modules.md",
     "lists.md",
-    "Markdown (Re)Introduction.md",
     "strings.md",
+    "Errors.md",
     "Design.md",
-    "Design.mdMarkdown (raw)Open file.webloc",
     "headers.md",
+    "Markdown (Re)Introduction.md",
+    "modules.md",
+    "Type.md",
+    "1. Natural Language Processing.md",
+    "Iteration.md",
+    "Conditionals.md",
+    "Boolean.md",
+    "Iteration~.md",
+    "Design.mdMarkdown (raw)Open file 3.webloc",
+    "Untitled",
+    "Design.mdMarkdown (raw)Open file 2.webloc",
+    "Design.mdMarkdown (raw)Open file.webloc",
     "string.md"
   ]
 }

@@ -11,8 +11,36 @@
             "id": "bdcf2c3488db0648",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Errors.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "576c5b7ac1f16600",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Errors.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4493ef7b49cab6cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "erro",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +89,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Errors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Errors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +149,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Errors.md"
+              }
             }
           }
         ]
@@ -140,26 +173,38 @@
   },
   "active": "bdcf2c3488db0648",
   "lastOpenFiles": [
-    "Notes/modules.md",
-    "Notes/1. Natural Language Processing.md",
-    "Notes/lists.md",
-    "Notes/Markdown (Re)Introduction.md",
+    "food_suggestion_bot.py",
+    "Notes/Errors.md",
+    "Notes/Untitled.md",
+    "Untitled.canvas",
+    "Errors.md",
     "Notes/Design.md",
+    "README.md",
+    "Notes/1. Natural Language Processing.md",
+    "Notes/Markdown (Re)Introduction.md",
+    "Notes/strings.md",
+    "Notes/Type.md",
+    "Notes/modules.md",
+    "Notes/Iteration~.md",
+    "Notes/Iteration.md",
+    "Notes/headers.md",
+    "Notes/Boolean.md",
+    "2023-09-14.md",
+    "Notes/Design.mdMarkdown (raw)Open file 3.webloc",
+    "Notes/Untitled",
+    "Notes/Design.mdMarkdown (raw)Open file 2.webloc",
+    "Notes/Boolean(1).md",
+    "Notes/Conditionals.md",
+    "Notes/lists.md",
     "Notes/Design.mdMarkdown (raw)Open file.webloc",
     "warmup_1.py",
     "warmup.1.py",
     "chatbot.py",
     "Notes/string.md",
-    "Notes/strings.md",
     "Notes/Format string.md",
-    "Notes/headers.md",
     "quotegenerator.py",
     "Notes/1. Natural Language Processing .md.md",
-    "Notes/Untitled.md",
-    "2023-09-14.md",
-    "README.md",
     "Untitled 1.canvas",
-    "Untitled.canvas",
     "Notes",
     "untitled folder"
   ]
