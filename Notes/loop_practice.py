@@ -16,7 +16,7 @@ groceries = ["hot wheels", "lego", "ice cream", "video games"]
 # define time
 import time
 
-# f string represents 
+# f string allows you to put variables inside the string (evaluate inside a string)
 for item in groceries: 
     print(f'*{item}')
     print(" ---")
