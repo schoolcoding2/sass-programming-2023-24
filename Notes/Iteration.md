@@ -11,6 +11,8 @@ tags:
 
 We can repeat our instructions using *iteration* or *loops*.
 
+iteration = repeat
+
 More detailed information can be found [here](https://runestone.academy/ns/books/published/thinkcspy/Strings/TraversalandtheforLoopByItem.html). 
 
 # Iterating over a [[List]]
@@ -72,4 +74,105 @@ names = ['Elizabeth Singleton', 'Raymond Mitchell', 'Steven Murphy', 'Daniel Ter
 for name in names:
 	if name == "Jasmine Soto":
 		print("We found her!")
+		break
+else: # If we reach the end of the list
+	print("we didn't find them.")
+
 ```
+
+# Iterating *n* Number of Times
+we can iterate/loop for any number of times.
+In python, we do it in a *strange* way. 
+```python
+for <name> in range(<some positive number>):
+	<code block>
+	
+```
+e.g.
+```python
+
+# Print out Mr.Ubial is cool. ten times
+for_in range(10):
+	print("Mr.Ubial is cool")
+	
+```
+
+for really large numbers, you can use the underscore (__) to indicate a comma
+
+Recall that when we iterate over lists, the item tells us the current element that we are on.
+
+When we iterate using range(), the item tells us **how many times we've looped since the beginning.**
+
+For example, we can leverage this in the way below:
+
+```python
+for i in range(5)
+	print(i)
+	
+```
+
+i helps us count how many iterations we have done
+**recount that python is a zero sum language, PYTHON BEGINS COUNTING AT 0**
+
+Simply put, i is a counter. It counts how many times we are looping.
+
+
+
+# `Range(<number>)`
+
+	`range()`` is a function that gives you a sequence of numbers starting at 0 by default. 
+	we can technically change where it starts but BY DEFAULT IT IS 0. 
+By default it also goes up by 1. Finally, it stops right before the number that we provide as input.
+
+```python
+range(100) # sequence(0,1,2,3,4,5,6,7,8 ..., 99)
+```
+
+
+```python
+list(range(100))
+```
+We can modify range() to start, stop, and count up/down by different numbers.
+
+```python
+range(<stop>)
+range(<start>, <stop>)
+range(<start>,<stop>,<step>)
+```
+
+# Can we start at another number?
+	yes! 
+for i in range (1,100):
+	print(i)
+
+^ means to start at 1 and goes until 99
+
+
+REMEMBER THAT THE ALGORITHM WILL STOP AT THE NUMBER BEFORE
+
+# Can we count by any other number 
+for i in range(0,101,3):
+	print(i)
+
+
+e.g. 
+```python
+range(0,100)  # Sequence(0,1,2, ..., 99)
+range(-10,10) #sequence(-10,-9,-8,... 9)
+range(0,100,2) # sequence(0,2,4, ... 9)
+range(100,0,-1) #sequence(100, 99, 98, ... 1)
+```
+**recount that python is a zero sum language, PYTHON BEGINS COUNTING AT 0**
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
