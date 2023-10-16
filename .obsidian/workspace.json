@@ -20,6 +20,16 @@
             }
           },
           {
+            "id": "bf6fe25b1bc017c7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
+          },
+          {
             "id": "576c5b7ac1f16600",
             "type": "leaf",
             "state": {
@@ -43,7 +53,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -171,11 +182,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bdcf2c3488db0648",
+  "active": "bf6fe25b1bc017c7",
   "lastOpenFiles": [
+    "star_wars_bot.py",
+    "Notes/star_wars_bot.py",
+    "star_wars_bot.py.",
+    "Notes/Untitled 1.canvas",
+    "Notes/2023-10-13.md",
+    "Notes/Untitled.canvas",
+    "Notes/Linear search/Search -A Practical Example.md",
+    "Notes/Linear search/Untitled.md",
+    "Notes/Untitled.md",
+    "Notes/Untitled",
+    "Notes/Linear search",
+    "loop_practice.py",
+    "Notes/loop_practice.py",
     "food_suggestion_bot.py",
     "Notes/Errors.md",
-    "Notes/Untitled.md",
     "Untitled.canvas",
     "Errors.md",
     "Notes/Design.md",
@@ -191,21 +214,14 @@
     "Notes/Boolean.md",
     "2023-09-14.md",
     "Notes/Design.mdMarkdown (raw)Open file 3.webloc",
-    "Notes/Untitled",
     "Notes/Design.mdMarkdown (raw)Open file 2.webloc",
     "Notes/Boolean(1).md",
     "Notes/Conditionals.md",
     "Notes/lists.md",
     "Notes/Design.mdMarkdown (raw)Open file.webloc",
-    "warmup_1.py",
-    "warmup.1.py",
-    "chatbot.py",
     "Notes/string.md",
     "Notes/Format string.md",
-    "quotegenerator.py",
     "Notes/1. Natural Language Processing .md.md",
-    "Untitled 1.canvas",
-    "Notes",
-    "untitled folder"
+    "Untitled 1.canvas"
   ]
 }

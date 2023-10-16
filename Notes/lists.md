@@ -7,8 +7,11 @@ MAKE SURE TO SEPARATE EACH LIST ITEM BY A COMMA
 to make a list, we use brackets [] to surround our lists
 We separate the individual items with commas
 
-'''python
+```
+python
 some_list= ["Jimmy", "Sara", "Frederique"]
+```
+
 
 jimmy comes before sara, sara comes before frederique
 
@@ -19,13 +22,15 @@ For "sets" and "dictionaries" order doesn't matter
 we can access the individual things from lists using **bracket notation** 
 In the example below, we'll use bracket notation to access "Sara"
 
-''' python
+```
+python
 some_list[1]            # "sara"
 some_list[0]           # "Jimmy"
 some_list[2]           # "Frederique"
 some_list[-1]          # "Frederique" counts from the end 
 some_list[-2]         # "sara"   
-'''
+```
+
 
 We can go backwards to access the item from the **back** / end of the list
 

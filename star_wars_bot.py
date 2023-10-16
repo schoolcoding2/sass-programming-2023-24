@@ -24,6 +24,6 @@ if like_red.lower().strip("!.,?") == "yes" or like_cape.lower().strip("!.,?") ==
 elif like_red.lower().strip("!.,?") == "no" and like_cape.lower().strip("!.,?") == "no":
     print("Light side, I see")
 else:
-    print("Sorry, I can not give you a formal answer at this time.")    
+    print("Light side it is")    
 
 

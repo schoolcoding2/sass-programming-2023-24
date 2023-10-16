@@ -70,3 +70,7 @@ grocery_list = grocery_list .split("")
 
 ```
 
+
+# list membership takes place
+
+ you use "in" to verify 

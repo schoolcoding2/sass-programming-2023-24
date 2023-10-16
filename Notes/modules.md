@@ -16,11 +16,13 @@ The `import` keyboard loads the module into our Python file
 Time allows us to play around with anything related to time
 Specifically, we can use `time` to pause our code
 
-''' python
+```
+python
 import time  
 
 pause our code for 1 second
 time.sleep(1)
-'''
+```
+
 
 
