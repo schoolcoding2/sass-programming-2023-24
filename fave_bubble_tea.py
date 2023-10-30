@@ -59,3 +59,22 @@ print(f"suntea likes to two decimal places {suntea_likes: 2f}")
 print(f"xinfutang likes to two decimal places  {xingfutang_likes: 2f}")
 print(f"bubble queen likes to two decimal places  {bubble_queen_likes: 2f}")
 print(f"other bubble tea places likes to two decimal places  {other_bubble_tea_place: 2f}")
+
+# Credit: Mr.Ubial's work (lines 65-82)
+
+# This is the formula/algorithm for getting the percentages of each place
+
+coco_percentage = coco_likes / NUM_RESPONDENTS * 100
+chatime_percentage = chatime_likes / NUM_RESPONDENTS * 100
+suntea_percentage = suntea_likes / NUM_RESPONDENTS * 100
+xingfutang_percentage = xingfutang_likes / NUM_RESPONDENTS * 100
+bubble_queen_percentage = bubble_queen_likes / NUM_RESPONDENTS * 100
+other_bubble_tea_percentage = other_bubble_tea_place / NUM_RESPONDENTS * 100
+
+# Print a summary of the results (based on input)
+print(f"CoCo Likes: {coco_likes} / {coco_percentage:.2f}%")
+print(f"Chatime Likes: {chatime_likes} / {chatime_percentage:.2f}%")
+print(f"Suntea Likes: {suntea_likes} / {suntea_percentage:.2f}%")
+print(f"Xing Fu Tang Likes: {xingfutang_likes} / {xingfutang_percentage:.2f}%")
+print(f"Bubble Queen Likes: {bubble_queen_likes} / {bubble_queen_percentage:.2f}%")
+print(f"Other Likes: {other_bubble_tea_place} / {other_bubble_tea_percentage:.2f}%")
