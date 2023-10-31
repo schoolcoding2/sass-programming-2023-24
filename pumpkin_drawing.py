@@ -55,10 +55,11 @@ carver.pensize(10)
 carver.color('brown')
 
 carver.backward(100)
-carver.circle(100,100)
+carver.circle(-100,100)
 
 carver.right(270)
-carver.forward(100)
+carver.up(100)
+carver.backward(100)
 carver.end_fill()
 
 

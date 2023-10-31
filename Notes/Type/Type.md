@@ -27,4 +27,17 @@ type = groups similar ideas/entities together
 
 NOT primitive type 
 
- 
+ ## Converting types
+There are some **special functions** built in python that helps to convert data from one type to another.
+
+```python
+intro_string = "My age is"
+my_age = 17
+
+# Recall that we can take one string and add another string to it
+
+"My name is" + "Jim"          # "My name isJim"
+"My name is" + "" +"Jim"      # "My name is Jim"
+
+intro_string + my_age         # This is going to break 
+```
