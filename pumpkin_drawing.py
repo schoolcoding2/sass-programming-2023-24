@@ -30,39 +30,41 @@ carver.pensize(2)
 
 # Nose
 carver.penup()
-carver.setposition(0, 0)
+carver.setposition(0, 20)
 carver.dot(20)
 carver.forward(15)
 
 # The left eye
 carver.penup()
-carver.setposition(-40,40)
+carver.setposition(-40,55)
 carver.dot(20)
 carver.forward(15)
 
 
 # The right eye
 carver.penup()
-carver.setposition(40,40)
+carver.setposition(40,55)
 carver.dot(20)
 carver.forward(15)
 
 #carve out a smile
 carver.penup()
-carver.setposition(0,-40)
+carver.setposition(-60, 0)
 carver.pendown()
-carver.pensize(10)
+carver.pensize(7)
 carver.color('brown')
 
-carver.backward(100)
-carver.circle(-100,100)
+# To spped up the carver, 0 is the fastest speed
+carver.speed(0)
+carver.right(90)
 
-carver.right(270)
-carver.up(100)
-carver.backward(100)
-carver.end_fill()
+#carving out a curved smile line 
+for x in range(180):
+    carver.forward(1)
+    carver.left(1)
+carver.right(20)
 
 
-
+carver.penup()
 
 turtle.done()
