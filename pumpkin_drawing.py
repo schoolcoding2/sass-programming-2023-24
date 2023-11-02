@@ -9,7 +9,8 @@ turtle.title("Emily Song's pumpkin carving exercise")
 
 
 window = turtle.Screen()
-window.bgcolor("black")
+window.bgcolor("pink")
+
 
 # Whole pumpkin
 pumpkin = turtle.Turtle()
@@ -52,7 +53,7 @@ carver.penup()
 carver.setposition(-60, 0)
 carver.pendown()
 carver.pensize(7)
-carver.color('brown')
+carver.color('dark orange')
 
 # To spped up the carver, 0 is the fastest speed
 carver.speed(0)
@@ -63,6 +64,15 @@ for x in range(180):
     carver.forward(1)
     carver.left(1)
 carver.right(20)
+
+# Add a hat 
+hat = turtle.Turtle()
+hat.hideturtle()
+hat.color("dark orange")
+hat.penup()
+hat.setposition(0,100)
+hat.pendown()
+hat.dot(40)
 
 
 carver.penup()
