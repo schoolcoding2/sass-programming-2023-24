@@ -20,11 +20,11 @@ total_rating += course_rating
 average_rating_per_course =  total_rating / course_number
 average_string = f"{average_rating_per_course:.2f}/ 5"
 
-if average_rating_per_course <= 1: 
+if average_rating_per_course <= .2: 
     print("Ouch")
-elif 1 < average_rating_per_course < 3:
+elif .2 < average_rating_per_course < .6:
     print("Not a bad semester")
-elif average_rating_per_course >= 3:
+elif average_rating_per_course >= .6:
     print("Glad to hear that!")
 else:
     print("sorry the number you inputted is outside of my scope of knowledge")
