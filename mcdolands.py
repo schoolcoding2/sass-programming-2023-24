@@ -15,11 +15,11 @@ user_fries = input("Would you like our signature $3 fries?").lower().strip(",.?!
 # calculate total cost with 14% tax 
 
 if user_burger == "yes" and user_fries == "no":
-   print(f"Your total will be ${5.00*1.14}") 
+   print(f"Your total will be ${5.00*1.14:.2f}") 
 elif user_burger == "yes" and user_fries == "yes":
-   print(f"Your total is ${8*1.14}")
+   print(f"Your total is ${8*1.14:.2f}")
 elif user_burger == "no" and user_fries == "yes":
-   print(f"Your total will be ${3.00*1.14}") 
+   print(f"Your total will be ${3.00*1.14:.2f}") 
 elif user_burger == "no" and user_fries == "no":
    print("okay, let me know if you ever decide to change your mind")
 else:
