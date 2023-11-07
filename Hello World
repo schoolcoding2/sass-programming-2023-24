@@ -1,0 +1,14 @@
+# while loop 10 times with incrementer variable i
+
+i=0
+while i<10:
+    print("This is a while loop with incrementer variable " + str(i))
+    i += 1
+
+# for loop 10 times with incremener variable j
+
+for j in range(10):
+    print("This is a for loop with incrementer variable " + str(j))
+
+print(i)
+print(j)

@@ -1,0 +1,11 @@
+for i in range(10):
+ print(i)
+
+ # the code prints number 1-9
+
+some_list = ["beans", "magic", "beanstalk"]
+print(some_list[0][1])
+
+raining = True
+sunny = False
+print(raining or sunny)
