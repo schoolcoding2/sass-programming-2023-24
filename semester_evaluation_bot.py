@@ -13,19 +13,18 @@ total_rating = 0
 course_rating = 0
 
 for i in range (1, course_number + 1):
-    total_rating = int(input(f"How do you rate course { +1 } out of 5? 5 is the best with 1 being the worst."))
+    total_rating = int(input(f"How do you rate course { i } out of 5? 5 is the best with 1 being the worst."))
 total_rating += course_rating 
 
-
 # Use the average score to represent the average rating of a single course
-average_rating_per_course= (total_rating / course_number)
-average_rating_final = int(f"{average_rating_per_course:.2f} / 5")
+average_rating_per_course=  total_rating / course_number /5
+average_rating_final = int(f"{average_rating_per_course:.2f}/ 5")
 
 if average_rating_final <= 1: 
     print("Ouch")
 elif 1 < average_rating_final < 3:
     print("Not a bad semester")
-elif average_rating_final > 3:
+elif average_rating_final >= 3:
     print("Glad to hear that!")
 else:
     print("sorry the number you inputted is outside of my scope of knowledge")
