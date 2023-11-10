@@ -36,27 +36,28 @@ with open("./data.csv") as f:
 
 profile = [ "Bubble world", "Chef Hung", "Uncle Fatih's", "Guadalupe", "Steve's Poke Bar"]
 
-with open ("./data/csv)") as f:
+with open ("./data.csv") as f:
     # Throw away the header
     header = f.readline
-    for line in f: 
-    # For every line of data in our csv file 
-    # convert the string to a list
-    current_likes = line.split(",")
     
-    # Store the person's name
-    current_name = current_likes[1]
+    for line in f: 
+        # For every line of data in our csv file 
+        # convert the string to a list
+        current_likes = line.split(",")
+        
+        # Store the person's name
+        current_name = current_likes[1]
 
-    # the person's name is the second piece of information RECALL THAT PYTHON STARTS COUNTING FROM 0
-current_sim_score = 0
+        # the person's name is the second piece of information RECALL THAT PYTHON STARTS COUNTING FROM 0
+        current_sim_score = 0
 
- # sim score algorithm
-for item in profile:
-    if item in current_likes:
-       current_sim_score += 1
+        # sim score algorithm
+        for item in profile:
+            if item in current_likes:
+                current_sim_score += 1
 
-# Print the result from this line of data
-print(f'{current_name} - score: {current_sim_score}')
+        # Print the result from this line of data
+        print(f'{current_name} - score: {current_sim_score}')
 
 
     # Initialize the current sim score

@@ -22,4 +22,5 @@ print(similarity_score)
 
 # all the data is normalized so the capitalization and lower case information does not count 
 
+# compares two data points
 
