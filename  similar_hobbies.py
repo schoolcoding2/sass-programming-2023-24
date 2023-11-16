@@ -18,8 +18,10 @@ person_b_name = input("What is your name person B?")
 person_a_hobbies = input(f"{person_a_name}: what's your favourite hobby ?").split(" ")
 person_b_hobbies = input(f"{person_b_name}: what's your favourite hobby ?").split(" ")
 
+# initialize the number of similarities (their similarity score) to zero
 similarity_score = 0
 
+# if person A shares the same hobby as person B, add one to their similarity scores
 for hobby in person_a_hobbies:
   if hobby in person_b_hobbies:
     similarity_score += 1
