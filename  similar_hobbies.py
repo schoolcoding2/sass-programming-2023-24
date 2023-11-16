@@ -26,7 +26,7 @@ for hobby in person_a_hobbies:
   if hobby in person_b_hobbies:
     similarity_score += 1
 
-
+# print out the final similarity score between the two individuals
 print (f"{person_a_name} and {person_b_name} you have a similarity score of {similarity_score}")
 
 
