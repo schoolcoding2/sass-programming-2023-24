@@ -1,5 +1,4 @@
 Timestamp,Who are you? (Please provide a fake name),What is your favourite cafe on campus?,What is your favourite Asian food on campus?,What's the best pizza on campus?,Best burritos?,Best healthy food?
-# csv = comma seperated values
 1/29/2018 11:46:10,gimmebubbleteapls,Bubble World,Noodle Waffle Cafe,Pizza Hut,Guadalupe (MBC),Subway
 1/29/2018 11:46:11,pooh,Bubble World,Noodle Waffle Cafe,Pizza Hut,Guadalupe (MBC),Subway
 1/29/2018 11:49:23,Joney ,Starbucks,Chef Hung,Uncle Fatih's,Guadalupe (MBC),Steve's Poke Bar
@@ -124,5 +123,3 @@ Timestamp,Who are you? (Please provide a fake name),What is your favourite cafe 
 1/31/2018 9:21:46,Stuart,Starbucks,Ichibankan Express,Pizza Hut,Quesada (Cornerstone),Subway
 1/31/2018 9:57:19,Ben,Tim Horton's,Noodle Waffle Cafe,Pizza Hut,Quesada (Cornerstone),Subway
 1/31/2018 10:05:47,Ben,Tim Horton's,Noodle Waffle Cafe,Pizza Hut,Quesada (Cornerstone),Nature's garden
-
-# we want to compare multiple data points 

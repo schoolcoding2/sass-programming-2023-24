@@ -1,4 +1,4 @@
-# SFU Best - Similarity Score
+# SFU Best - Similarity Score Expanded 
 # Author: Emily Song
 # 10 November 2023
 
@@ -33,7 +33,7 @@ with open("./data.csv") as f:
 # If item in current line's likes 
 # Increase sim score by 1 
 
-profile = [ "Bubble World", "Chef Hung", "Uncle Fatih's", "Guadalupe (MBC)", "Steve's Poke Bar"]
+profile = [ "Bubble world", "Chef Hung", "Uncle Fatih's", "Guadalupe (MBC)", "Steve's Poke Bar"]
 
 # Initiative top score and their name
 most_similar_score = 0
@@ -49,7 +49,7 @@ with open ("./data.csv") as f:
     for line in f: 
         # For every line of data in our csv file 
         # convert the string to a list
-        current_likes = line.split(",")
+        current_likes = [item.lower() for item in line.split(",")]
         
         # Store the person's name
         current_name = current_likes[1]
@@ -59,7 +59,7 @@ with open ("./data.csv") as f:
 
         # sim score algorithm
         for item in profile:
-            if item in current_likes:
+            if item.lower() in current_likes:
                 current_sim_score += 1
 
         # Print the result from this line of data
