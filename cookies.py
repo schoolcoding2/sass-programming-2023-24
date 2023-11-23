@@ -7,6 +7,7 @@ import turtle
 
 # Make baker turtle
 baker_turtle = turtle.Turtle()
+baker_turtle.spped(0)
 baker_turtle.color("brown")
 
  # applying the mathematical concept of functions and inputs
@@ -43,3 +44,4 @@ def make_cookie(x: int, y: int):
     
 make_cookie(100,100)
 make_cookie(0,0)
+
