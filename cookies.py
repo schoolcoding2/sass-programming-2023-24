@@ -9,7 +9,7 @@ import turtle
 baker_turtle = turtle.Turtle()
 baker_turtle.color("brown")
 
- # applying the matehmatical concept of functions and inputs
+ # applying the mathematical concept of functions and inputs
 def make_cookie(x: int, y: int):
     """Draws a cookie on the screen at (x,y)
     Parameters:
