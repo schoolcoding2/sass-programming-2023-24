@@ -34,7 +34,7 @@ def area_of_a_square(sidelength: float) -> float:
 def stars(num_stars: int) -> str:
     """"""
 
-    return
+    return area
 
 
 stars(2)  #   **
