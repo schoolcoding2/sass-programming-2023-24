@@ -16,7 +16,7 @@ def area_of_square(sidelength: float) -> float:
     return area
 
 
-def area_of_square(sidelength: float) -> None:
+def print_area_of_square(sidelength: float) -> None:
     """Prints out the area of a square with given sidelength.
     
     Params:
@@ -33,6 +33,10 @@ def area_of_square(sidelength: float) -> None:
 sum_of_areas = area_of_square(14.4) + area_of_square(120)
 
 print(sum_of_areas)
+
+# scope matters: scope = python only sees the code on the outside and not part of the tab
+# if two variables are defined the same, python replaces the top variable witht the bottom one
+# python reads from left to right and up and down 
 
 
 # stars(2)  #   **
