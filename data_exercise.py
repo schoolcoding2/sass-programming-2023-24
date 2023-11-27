@@ -97,30 +97,30 @@ print(f"There are {even_credit_card} people who have a credit card number that i
 
 import csv
 from collections import Counter
+with open("./data_example.csv", encoding="utf-8") as f:
+    for line in f:
+        line.split(",")
 
-# Path to the file
-file_path = "./data_example.csv"
-
-# List of all favorite food options
-favorite_food = ["Hamburger", "Chicken Adobo", "Katsudon", "Fish and Chips", "Gyros", "Samosa", "Pad Thai", "Fish Tacos",
+    # List of all favorite food options
+    favorite_food = ["Hamburger", "Chicken Adobo", "Katsudon", "Fish and Chips", "Gyros", "Samosa", "Pad Thai", "Fish Tacos",
                  "Cobb Salad", "Kimchi", "Churros", "Pasta Carbonara", "Ramen", "Falafel", "Croissant", "Goulash",
                  "Mole Poblano", "Peking Duck", "Sauerbraten", "Rendang", "Poutine", "Pav Bhaji", "Tikka Masala",
                  "Pizza", "Butter Chicken", "Tandoori Chicken", "Jollof Rice", "Tiramisu", "Couscous", "Pho",
                  "Dim Sum", "Moussaka", "Lasagna", "Ceviche", "Croque Monsieur", "Pozole", "Sushi", "Chicken Satay",
                  "Biryani", "Pierogi", "Feijoada", "Kebab", "Tacos", "Paella", "Katsudon", "Sashimi", "Baklava"]
 
-# Read the file and tally the occurrences of each food item
-food_counter = Counter()
+    # Read the file and tally the occurrences of each food item
+    food_counter = Counter()
 
-with open(file_path, encoding="utf-8") as f:
+    
     csv_reader = csv.reader(f)
     for row in csv_reader:
         for item in row:
             if item.strip() in favorite_food:
                 food_counter[item.strip()] += 1
 
-# Find the most popular food item
-most_popular_food, occurrences = food_counter.most_common(1)[0]
+    # Find the most popular food item
+    most_popular_food, occurrences = food_counter.most_common(1)[0]
 
 # Display the result
 print(f"The most popular food item is: {most_popular_food} with {occurrences} occurrences.")

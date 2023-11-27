@@ -85,18 +85,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lists.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e45f639c52f9a4e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Functions.md",
                 "mode": "source",
                 "source": false
@@ -116,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -243,10 +231,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5e45f639c52f9a4e",
+  "active": "11417093915d61be",
   "lastOpenFiles": [
+    "numbers_solutions.md",
     "lists.md",
     "Functions.md",
+    "Functions.py",
+    "functions_practice.py",
     "Untitled 2.md",
     "Untitled 3.md",
     "data.csv",
@@ -277,8 +268,6 @@
     "loop_practice.py",
     "Iteration~.md",
     "Design.mdMarkdown (raw)Open file 3.webloc",
-    "Design.mdMarkdown (raw)Open file 2.webloc",
-    "Design.mdMarkdown (raw)Open file.webloc",
     "string.md"
   ]
 }
