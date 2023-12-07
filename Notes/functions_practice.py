@@ -108,33 +108,31 @@ pyramid(10)
 
 # Exercise 4 Create a Pyramid mirror
 
-def pyramid_mirror(num_layers:int) -> None:
-    """Print a pyramid mirrored of given number of layers.
-    
-    Params:
-    num_layers - number of layers in the pyramid
-    """
 
-    for current_layer in range(1, num_layers+1):
-        # Spaces is equal to total num of layers
-        # minus the stars in the current layer
-        spaces = "" * (num_layers - current_layer)
+def linear_search(l: list, item: any) -> int:
+     """Search through a list and if found,
+     returns the index of the first occurence
+     of the item.
+     Params:
+             l - list we're search through
+             item - item we're looking for
+     Returns:
+             index if found, -1 if not found
+     """
+     counter = 0
 
-        print(spaces + stars(current_layer))
+     # search algorithm
+     for thing in l:
+         if thing == item:
+             return counter
+         counter += 1
 
-pyramid_mirror(2)
-pyramid_mirror(20)
-pyramid_mirror(20)
+     return -1
+pockets = ["coins", "lint", "paperclip", "keys", "wallet"]
 
+results = linear_search(pockets, "keys")
 
-
-
-
-
-
-
-
-
-
-
-
+if results == -1:
+     print("Your keys are not in your pockets")
+else:
+     print(f"Found your keys! They're in the {results}th index.")
