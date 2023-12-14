@@ -8,8 +8,24 @@
 
 from PIL import Image
 import time
+def pixel_to_name(pixel: tuple) -> str:
+    """Given a 3-tuple, return a string representing
+    its colour
 
-    # open up kid green
+    Params:
+        pixel = 3-tuple of values (red, green, blue)
+
+    Returns:
+        name of the colour
+    """
+    red, green, blue = pixel
+
+    if red < 25 and blue < 25 and green > 249:
+        return "green"
+    else:
+        return "colour unknown"
+
+# open up kid green
 with Image.open("./Images/kid-green.jpg") as im:
 
     # grab the pixel in the top left corner
@@ -39,12 +55,29 @@ with Image.open("./Images/kid-green.jpg") as im:
     Image_height = im.height
     Image_width = im.width
 
+    # open background image
+    bg_im = Image.open("./Images/beach.jpg")
+
+    # *** REMEMBER TO CLOSE THE IMAGE WHEN DONE
+
+
     # starting at the top and working our way down
     for y in range(Image_height):
         # visit the pixels from the left to right
         for x in range(Image_width):
         # print this pixel's information 
             pixel = im.getpixel((x,y))
-            print(x, y, pixel)
-            time.sleep(0.1)
+            
+            if pixel_to_name(pixel) == "green":
+            # replace it with bg.pixel in same location 
+                bg_pixel = bg_im.getpixel((x,y))
+
+                im.putpixel((x,y), bg_pixel)
+
+
+# *** REMEMBER TO CLOSE THE IMAGE WHEN DONE
+bg_im.close()
+
+# Save the image 
+im.save("./Images/output.jpg")
 
