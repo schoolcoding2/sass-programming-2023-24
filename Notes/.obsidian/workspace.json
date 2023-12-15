@@ -116,6 +116,18 @@
             }
           },
           {
+            "id": "1b430eeabca426de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Scope and Loops.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "4a88c9160ee67dbe",
             "type": "leaf",
             "state": {
@@ -265,8 +277,9 @@
   },
   "active": "aa020bbb334e46a9",
   "lastOpenFiles": [
-    "Linear search/Search -A Practical Example.md",
+    "Scope and Loops.md",
     "lists.md",
+    "Linear search/Search -A Practical Example.md",
     "Untitled.md",
     "Recursion.md",
     "functions_recursion.py",
@@ -284,7 +297,6 @@
     "Untitled 2.md",
     "Untitled 3.md",
     "2 - Recommendation Systems.md",
-    "Untitled 1.md",
     "Numbers.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
