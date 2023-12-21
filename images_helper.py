@@ -3,46 +3,66 @@
 # 19 December 2023
 
 from PIL import Image
-def is_light(pixel: tuple) -> bool:
-    """Returns true if the pixel is a "light" pixel
-    Params:
-        pixel - 3-tuple of values r, g, b
-    red, green, blue = pixel
-    """
-    red = pixel[0]
-    green = pixel[1]
-    blue = pixel[2]
-    average = (red + green + blue) / 3
-    if average >= 128:
-        return True
-    else:
-        return False
-    return
+import colour_helper
+
 # Test?
-light_pixel = (200, 200, 200)
+light_pixel = (255, 255, 255)
 light_gray = (128, 128, 128)
+darker_gray = (100, 128, 128)
+reddish_pixel = (255, 100, 24)
 dark_gray = (127, 127, 127)
 dark_pixel = (0, 0, 0)
-print(is_light(light_pixel))
-print(is_light(light_gray))
-print(is_light(dark_pixel))
-print(is_light(dark_gray))
-# Open up the image
-# For every pixel in the image
-    # if the pixel is light
-        # replace it with a light pixel
-    # else
-        # replace it with a dark pixel
-# after visiting every pixel, save the image
-with Image.open("./Images/catto (1).png") as im:
- for y in range(im.height):
-        for x in range(im.width):
-             pixel = im.getpixel((x, y))
-             if is_light(pixel):
-                 im.putpixel((x, y), light_pixel)
-             else:
+
+print(colour_helper.is_light(light_pixel))  # True
+print(colour_helper.is_light(light_gray))  # True
+print(colour_helper.is_light(reddish_pixel))  # False
+print(colour_helper.is_light(dark_gray))  # False
+print(colour_helper.is_light(dark_pixel))  # False
+
+# Open the image
+with Image.open("./Images/best_pizza.jpg") as im:
+    image_height = im.height
+    image_width = im.width
+
+    # starting at the top and working our way down
+    # visit the pixels from left to right
+    for y in range(image_height):
+        for x in range(image_width):
+            pixel = im.getpixel((x, y))
+
+            # if the pixel is light
+            if colour_helper.is_light(pixel):
+                im.putpixel((x, y), light_pixel)
+            else:
                 im.putpixel((x, y), dark_pixel)
-im.save("./Images/binarized.jpg")
+
+    # After visiting every pixel, save the image
+    im.save("./Images/binarized.jpg")
+
+
+def picture_to_grayscale(filename: str) -> None:
+    """Convert a given picture to grayscale"""
+
+    # Open up the image                                                     
+
+    with Image.open(f"./Images/{filename}") as im:
+        # Visit every pixel
+        for y in range(im.height):
+            for x in range(im.width):    
+                pixel = im.getpixel((x, y))
+                
+                # Take that pixel and convert it to gray
+                gray_pixel = colour_helper.pixel_to_grayscale(pixel)
+
+                im.putpixel((x, y), gray_pixel)
+        
+        # Save the image
+        im.save("./Images/grayscale.jpg")
+
+picture_to_grayscale(f'best_pizza.jpg')
+
+
+
 
 
 

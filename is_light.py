@@ -4,6 +4,7 @@
 
 from PIL import Image
 
+
 def is_light(pixel:tuple) -> bool:
     """ Returns Turn if the pixel is a "light" pixel
 
