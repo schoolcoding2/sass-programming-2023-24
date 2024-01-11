@@ -35,9 +35,19 @@ def winter_holidays(good_or_bad: str) -> str:
     else:
         return "Invalid input. Please specify 'good' or 'bad'."
 
-# Ask user for their winter break events/summary 
-user_input = input("Was your winter holiday experience good or bad? ").strip()
+def main() -> None:
+    print(winter_holidays("good"))
+    #very good. I went to go shopping for winter formal dresses
+    #It was well. I ate hot pot and celebrated my grandma's birthday
+    # I got a beautiful necklace for christmas
 
-# Get a random event based on the user input
-print(winter_holidays(user_input))
 
+    print(winter_holidays("bad"))
+    # Unfortunately, I did not sleep much 
+    # I spent a lot of money on university applications"
+
+    print(winter_holidays("good"))
+
+
+if __name__ == "__main__":
+    main()
