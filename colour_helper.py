@@ -14,18 +14,20 @@ def pixel_to_name(pixel: tuple) -> str:
     """
     red, green, blue = pixel
 
-    # TODO: detect red pixels
-    if red < 200 and blue < 200 and green > 220:
-        return "green"
+    # TODO: detect blue pixels
+    if red > 150 and blue < 50 and green > 50:
+        return "red"
     elif red > 170 and green < 60 and blue < 60:
-        return "green"
+        return "blue"
     elif red < 60 and green > 80 and blue < 60:
         return "jelly bean green"
+    elif red < 50 and 10 <= green <= 70  and blue > 90:
+        return "jelly bean blue"
     else:
         return "colour unknown"
 
 
-print(pixel_to_name((180, 3, 2)))
+print(pixel_to_name((2, 3, 180)))
 print(pixel_to_name((255, 255, 255)))
 
 
@@ -66,14 +68,17 @@ def pixel_to_random_effect(pixel: tuple) -> tuple:
     red, green, blue = pixel
 
     red += 30
-    green += 50
-    blue -= 10
+    green += 30
+    blue += 50
 
     if red > 255:
         red = 255
     if green > 255:
         green = 255
-    if blue < 0:
-        blue = 0
+    if blue > 255:
+        blue = 255
 
     return (red, green, blue)
+
+# give a name to the x and y coordinate to the middle of the ball
+# make sure to validate your results based on the white dot at the center of the ball 

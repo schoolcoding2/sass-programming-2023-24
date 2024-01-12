@@ -19,13 +19,15 @@ from PIL import Image
 
 import colour_helper
 
-blue= (0,0,250)
+BLUE_PIXELS= (0,0,160)
+RED_PIXEL = (160, 0, 0)
+GREEN_PIXEL = (0, 160, 0)
 
+
+jelly_bean_img = Image.open("./Images/Jelly Beans.jpg")
 green_pixels = []
 
 blue_pixels = []
-
-jelly_bean_img = Image.open("./Images/Jelly Beans.jpg")
 
 red_pixels = []
 
@@ -54,11 +56,11 @@ blue_pixel_map = Image.new("RGB", (orig_image_width, orig_image_height))
           
 # For every pixel in the red_pixels list
 # Place a red pixel at that location
-for pixel_loc in green_pixels:
-    blue_pixel_map.putpixel(pixel_loc, BLUE PIXELS)
+for pixel_loc in blue_pixels:
+    blue_pixel_map.putpixel(pixel_loc, BLUE_PIXELS)
 
 # Save the image
-blue_pixel_map.save("./Images/green_pixel_map.jpg")
+blue_pixel_map.save("./Images/blue_pixel_map.jpg")
 blue_pixel_map.close()
 
 # Count all the locations of red pixels
@@ -76,6 +78,6 @@ blue_pixel_percentage = blue_pixel_count / total_pixels * 100
 print(f"Red Jelly Beans: {round(red_pixel_percentage, 2)}%")
 print(f"Green Jelly Beans: {round(green_pixel_percentage, 2)}%")
 print(f"Blue Jelly Beans: {round(blue_pixel_percentage, 2)}%")
-print(blue_pixels)
+
 jelly_bean_img.close()
 
