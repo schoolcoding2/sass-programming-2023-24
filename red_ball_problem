@@ -1,0 +1,77 @@
+# Red Ball Problem
+# Author: Emily Song
+# Date: 12 January 2024
+
+from PIL import Image
+
+import colour_helper
+
+RED_PIXELS = (200, 50,50)
+
+red_ball_360_img = Image.open("./Images/red_ball_360.jpg")
+
+red_pixels = []
+
+# Visit every pixel in the image
+for y in range(red_ball_360_img.height):
+    for x in range(red_ball_360_img.width):
+        # Get the pixel information
+        current_pixel = red_ball_360_img.getpixel((x, y))
+
+        # If this pixel is red
+        if colour_helper.pixel_to_name(current_pixel) == "red":
+            # Store its location somewhere
+            red_pixels.append((x, y))
+    
+print(red_pixels)
+
+
+# Create a map of all red pixels "found"
+# - the new image should be the same size as the original
+orig_image_width = red_ball_360_img.width
+orig_image_height = red_ball_360_img.height 
+
+red_pixel_map = Image.new("RGB", (orig_image_width, orig_image_height))
+          
+# For every pixel in the red_pixels list
+# Place a red pixel at that location
+for pixel_loc in red_pixels:
+    red_pixel_map.putpixel(pixel_loc, (350,15,15))
+
+# Save the image
+red_pixel_map.save("./Images/red_ball_solution.jpg")
+red_pixel_map.close()
+
+# Create an empty list to store all x coordinatesw
+list_of_x_coords = []
+list_of_y_coords = []
+
+# For every pixel in red pixels
+for pixel in red_pixels:
+    # add the x-coordinate to the x-coordinates list
+    list_of_x_coords.append(pixel[0])
+    list_of_y_coords.append(pixel[1])
+#print out all the x and y coordinates
+print(list_of_x_coords)
+print(list_of_y_coords)
+
+# Find the center x coordinate location of the ball
+center_ball_x_coord = ((max(list_of_x_coords))- min(list_of_x_coords)/2)
+
+# Find the center y coordinate location of the ball
+center_ball_y_coord = ((max(list_of_y_coords))- min(list_of_y_coords)/2)
+
+# Print the final center location of the ball (both x and y coordinates)
+print(center_ball_x_coord, center_ball_y_coord)
+
+
+# Count all the locations of red pixels
+red_pixel_count = len(red_pixels)
+total_pixels = red_ball_360_img.width * red_ball_360_img.height
+
+red_ball_360_img.close()
+
+
+
+
+
