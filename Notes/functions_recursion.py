@@ -1,5 +1,5 @@
 # Functions and Recursion
-# Author: Ubial
+# Author: Emily 
 # 7 December 2023
 
 import time

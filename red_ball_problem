@@ -6,6 +6,11 @@ from PIL import Image
 
 import colour_helper
 
+# open the image 
+red_ball_360_img = Image.open("./Images/red_ball_360.jpg")
+
+# Visit every pixel and find the red ones
+
 RED_PIXELS = (200, 50,50)
 
 red_ball_360_img = Image.open("./Images/red_ball_360.jpg")
@@ -15,6 +20,7 @@ red_pixels = []
 # Visit every pixel in the image
 for y in range(red_ball_360_img.height):
     for x in range(red_ball_360_img.width):
+
         # Get the pixel information
         current_pixel = red_ball_360_img.getpixel((x, y))
 
@@ -24,6 +30,9 @@ for y in range(red_ball_360_img.height):
             red_pixels.append((x, y))
     
 print(red_pixels)
+
+# Find the minimum x and minimum y
+# Find the maximum x and maximum y 
 
 
 # Create a map of all red pixels "found"
@@ -71,6 +80,25 @@ total_pixels = red_ball_360_img.width * red_ball_360_img.height
 
 red_ball_360_img.close()
 
+
+# Ubial's solution to   
+
+# find the minimum and maximum 
+
+# calculate the midpoint between the two (x and y) 
+# mid_x = max_x + (max_x - min_x)
+# mid_y= max_y + (max_y - min_y)
+
+# Report the results:
+# print(mid_x. mid_y)
+
+# Put a crosshair at the coordinate in redball
+# red_image.putpixel((mid_x, mid_y), (255, 255, 255))
+# ball_image.putpixel(mid)
+
+
+# min_x = (min, x_coord)
+# 
 
 
 
